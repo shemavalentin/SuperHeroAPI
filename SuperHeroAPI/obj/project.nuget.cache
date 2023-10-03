@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "RFb2Ip+W98aX2V5z7Gyw9jdfenJVNVmTZSfq03WtSeE6mGhHq+oqdHkL8gt4c9yKWR7VNBFjJU/PGgi+D43I3A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SHEMA Valentin\\Desktop\\PROGRAMMING\\C# Projects\\Development\\SuperHeroAPI\\SuperHeroAPI\\SuperHeroApiDotNet7.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SHEMA Valentin\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.11\\microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
+    "C:\\Users\\SHEMA Valentin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\SHEMA Valentin\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\SHEMA Valentin\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\SHEMA Valentin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\SHEMA Valentin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\SHEMA Valentin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
