@@ -42,7 +42,7 @@ namespace SuperHeroApiDotNet7.Controllers
         // TO get the Id of a hero we use Route
 
         //[Route("{id}")] // Or we can combine this line with the HttpGet method
-        public async Task<ActionResult<List<SuperHero>>> GetSingleHeroe(int id)
+        public async Task<ActionResult<List<SuperHero>>> GetSingleHero(int id)
         {
             var hero = superHeroes.Find(x => x.Id == id);
             if (hero == null)
@@ -58,6 +58,37 @@ namespace SuperHeroApiDotNet7.Controllers
         public async Task<ActionResult<List<SuperHero>>> AddHero(SuperHero hero) // If you want to exactly be sure ure [FromBody]
         {
             superHeroes.Add(hero);
+            return Ok(superHeroes);
+        }
+
+        // PUT METHOD: Update Our hero
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<List<SuperHero>>> UpdateHero(int id, SuperHero request)
+        {
+            var hero = superHeroes.Find(x => x.Id == id);
+            if (hero is null)
+                return NotFound("Sorry, but this hero doesn't exisst.");
+
+            hero.FirstName = request.FirstName;
+            hero.LastName = request.LastName;
+            hero.Name = request.Name;
+            hero.Place = request.Place;
+
+            return Ok(superHeroes);
+;        }
+
+        // DELETE Method
+
+        [HttpDelete("{id}")]
+
+        public async Task<ActionResult<List<SuperHero>>>DeleteHero(int id)
+        {
+            var hero = superHeroes.Find(x => x.Id == id);
+            if (hero is null)
+                return NotFound("Sorry, but this hero doesn't exist");
+
+            superHeroes.Remove(hero);
             return Ok(superHeroes);
         }
 
